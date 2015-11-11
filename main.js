@@ -25,5 +25,7 @@ var app = angular.module('travel-app', [
             }
           }
         })
-    }	
+    }.run( function() {
+      console.log("Angular app running!");
+    })
   )

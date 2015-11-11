@@ -27,5 +27,6 @@ var app = angular.module('travel-app', [
         })
     }.run( function() {
       console.log("Angular app running!");
+    }).controller('destController', ['$scope', '$stateParams', 'title', function($scope, $stateParams, title){
     })
   )

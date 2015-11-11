@@ -9,11 +9,21 @@ var app = angular.module('travel-app', [
           url: '/list',
           templateUrl: 'list.html',
           controller: 'destController',
+          resolve: {
+            title: function() {
+              return {value: "Follow the traveling data"}
+            }
+          }
         })
         .state('destination', {
           url: '/dest/:id',
           templateUrl: 'dest.html',
           controller: 'destController',
+          resolve: {
+            title: function() {
+              return {value: "Traveling Spot"}
+            }
+          }
         })
     }	
   )
